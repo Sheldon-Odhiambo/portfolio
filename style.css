@@ -165,6 +165,7 @@ span{
     font-size: 4.5rem;
 }
 
+
 .about-content h2{
     text-align: left;
     line-height: 1.2;
@@ -186,7 +187,7 @@ span{
 
 
 .container{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
@@ -194,6 +195,12 @@ span{
     grid-gap: 1rem;
     padding: 1rem 80px;
     
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
 }
 
 .skill-title{
@@ -205,3 +212,142 @@ span{
 .skill-icon{
     width: 50px;
 }
+/* .img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.skill-title h3{
+    color: #fff;
+    margin-top: 0.5rem;
+}
+.skill-box:hover > .skill-title:after, .skill-box:hover .skill-title:before{
+    width: 35px;
+}
+
+.portfolio{
+    background: var(--second-bg-color);
+}
+
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+
+.portfolio-container{
+    display: flex;
+    grid-template-columns: repeat(3 1fr);
+    align-items: center;
+    gap: 2.5rem ;
+}
+
+.portfolio-container .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+
+}
+
+.portfolio-box img{
+    width: 150%;
+    transition: .5s ease;
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+
+
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease-out;
+}
+
+.portfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+}
+
+
+
+.portfolio-layer h4{
+    font-size: 3rem; 
+}
+
+.portfolio-layer a{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+/* 
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+} */
+
+
+
+
