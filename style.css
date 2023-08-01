@@ -348,6 +348,113 @@ span{
     resize: none;
 } */
 
+.container-c{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 8%;
+}
 
+.container-c .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+}
 
+.row section .col{
+    display: flex;
+    flex-direction: column;
+}
+
+.row section.left{
+    flex-basis: 35%;
+    min-width: 320px;
+    margin-right: 60px;
+    /* background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color)); */
+}
+
+.row section.right{
+    flex-basis: 60%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+
+}
+
+section.left .contactTitle h2{
+    position: relative;
+    font-size: 25px;
+    color: var(--main-color);
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+section.left .contactTitle h2::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: #888;
+    top: 120%;
+    left: 0;
+}
+
+section.left .contactTitle h2::after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 2px;
+    background-color: var(--main-color);
+    /* top: 120%; */
+    top: calc(120% - 1px);
+    left: 0;
+
+}
+
+section.left .contactTitle p{
+    font-size: 17px;
+    color: #ccc;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding-bottom: 22px;
+
+}
+
+section.left .contactInfo{
+    margin-bottom: 16px;
+}
+
+.contactInfo .iconGroup{
+    display: flex;
+    align-items: center;
+    margin:25px 0px;
+}
+
+.iconGroup .icon{
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+}
+
+.iconGroup .icon i{
+    font-size: 20px;
+    color: #ddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.iconGroup .details span{
+    display: block;
+    color: #888;
+    font-size: 18px;
+}
+
+iconGroup .details span:nth-child()
 
