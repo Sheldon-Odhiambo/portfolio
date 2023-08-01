@@ -378,7 +378,7 @@ span{
 
 .row section.right{
     flex-basis: 60%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    /* background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color)); */
 
 }
 
@@ -456,5 +456,59 @@ section.left .contactInfo{
     font-size: 18px;
 }
 
-iconGroup .details span:nth-child()
+iconGroup .details span:nth-child(1){
+    text-transform: uppercase;
+    color: #ccc;
+}
+
+
+.row.section.right .messageForm{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+
+}
+.row .row.section.right{
+    margin: 18px 0px;
+    position: relative;
+}
+.messageForm .halfWidth{
+    flex-basics: 48%;
+}
+
+.messageForm .fullWidth{
+    flex-basis: 100%;
+}
+.messageForm input, .messageForm textarea{
+    width: 100%;
+    font-size: 18px;
+    padding: 2px 0px;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    border: none;
+    border-bottom: 2px solid #666;
+    outline: none;
+}
+
+.messageForm textarea{
+    resize: none;
+    height: 220px;
+    display: block;
+}
+
+textarea::-webkit-scrollbar{
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-track{
+    background-color: #1e1e1e;
+    border-radius: 15px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 15px;
+}
+
 
