@@ -48,7 +48,7 @@ ScrollReveal().reveal('.about-img, .contact form', { origin: 'left' });
 
 // Typed.js
 var typed = new Typed('.multiple-text', {
-    strings: ["Frontend Developer", "UI/UX Enthusiast", "Basketball Athlete"],
+    strings: ["Creative Developer", "UI/UX Enthusiast", "Basketball Athlete"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
